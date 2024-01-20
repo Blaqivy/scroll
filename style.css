@@ -1,0 +1,190 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  background: #6f8faf;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+h3 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+nav {
+  background: #000066;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000066;
+  box-shadow: 5px 5px 10px 0px #222;
+}
+.fixed-nav .links a {
+  color: whitesmoke;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-toggle {
+  font-size: 20px;
+  color: whitesmoke;
+  background: transparent;
+  border-color: transparent;
+  margin: 0px 10px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: rgb(12, 201, 185);
+}
+.nav-logo {
+  height: 100px;
+  width: 100px;
+  padding: 0px;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.show-links {
+  height: 200px;
+}
+.links {
+  padding: 20px;
+}
+.links a {
+  color: whitesmoke;
+  font-size: 20px;
+  text-transform: capitalize;
+  display: block;
+  padding: 10px 0px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+.links a:hover {
+  color: rgb(12, 201, 185);
+}
+@media screen and (min-width: 800px) {
+  nav {
+    background: transparent;
+  }
+  .nav-center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    background: transparent;
+    position: relative;
+    color: whitesmoke;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: block;
+    margin: 0px 10px;
+    font-weight: bold;
+  }
+  .links a:hover {
+    color: rgb(12, 201, 185);
+  }
+}
+header {
+  min-height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(9, 72, 74, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(./images/hero-image.jpg) center/cover no-repeat;
+}
+.banner {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.container h3 {
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+.container a {
+  color: whitesmoke;
+  max-width: 25rem;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.title h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.title span {
+  color: rgb(12, 201, 185);
+}
+.section {
+  height: 80vh;
+}
+#the-band {
+  background: #a7c7e7;
+}
+footer {
+  background: #000066;
+  padding: 64px 16px;
+}
+footer p {
+  font-weight: 500;
+  color: whitesmoke;
+  text-align: center;
+  text-transform: capitalize;
+}
+.top-link {
+  font-size: 18px;
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  background: rgb(12, 201, 185);
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  color: whitesmoke;
+  visibility: hidden;
+  z-index: -100;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
